@@ -1,7 +1,9 @@
+// Variables
 const inputBinaryValue = document.getElementById('input-binary-value');
 const resultParagraph = document.getElementById('result');
 const convertBtn = document.getElementById('convert-btn');
 
+// Funciton that converts a binary number to a decimal number
 const convertBinToDec = (event) => {
     event.preventDefault();
     const binaryNum = inputBinaryValue.value;
@@ -16,4 +18,5 @@ const convertBinToDec = (event) => {
     resultParagraph.textContent = result;
 }
 
+// Event listeners
 convertBtn.addEventListener('click', convertBinToDec);
